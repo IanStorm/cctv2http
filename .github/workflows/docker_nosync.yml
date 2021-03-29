@@ -1,3 +1,6 @@
+#
+# Inspired by https://github.com/IanStorm/dev-settings-sync.
+#
 name: Docker
 
 on:
@@ -45,7 +48,7 @@ jobs:
           echo VERSION=$VERSION
 
           docker buildx build \
-            --platform linux/amd64,linux/arm/v7,linux/arm/v6l \
+            --platform linux/amd64,linux/arm/v7 \
             --output "type=image,push=true" \
             --tag $IMAGE_ID:$VERSION \
             --file Dockerfile \
