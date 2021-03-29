@@ -1,7 +1,36 @@
 # cam2http
 
+**🐳 Make sure you have installed *Docker*.**
+
+
+## How to use in "production"? 👨‍💼 👩‍💼
+
+1. Follow ["How to get a pre-built Docker image?"](#-how-to-get-a-pre-built-docker-image-☁️)
+2. Start a Docker instance:
+```
+$	docker run \
+		--rm \
+		-t \
+		--device=/dev/video0 \
+		-p 8080:8080 \
+		ianstorm/cam2http:latest
+```
+
+
+## How to develop? 👨‍💻 👩‍💻
+
+...TODO:...
+
 
 ## Appendix
+
+
+### How to get a pre-built Docker image? ☁️
+
+Get the latest Docker image from Docker Hub:
+```
+$	docker pull ianstorm/cam2http:latest
+```
 
 
 ### Sources
