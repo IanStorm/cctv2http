@@ -4,7 +4,7 @@ nginx
 
 ffmpeg \
 	-re \
-	-i /dev/video0 \
+	-f video4linux2 -i /dev/video0 \
 	-vcodec libx264 -vprofile baseline \
 	-acodec aac \
 	-strict -2 \
