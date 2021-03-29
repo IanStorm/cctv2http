@@ -45,7 +45,7 @@ jobs:
           echo VERSION=$VERSION
 
           docker buildx build \
-            --platform linux/amd64,linux/arm/v7 \
+            --platform linux/amd64,linux/arm/v7,linux/arm/v6l \
             --output "type=image,push=true" \
             --tag $IMAGE_ID:$VERSION \
             --file Dockerfile \
