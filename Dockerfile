@@ -29,12 +29,15 @@ RUN apt-get -y update; \
 	apt-get -y remove aptitude; \
 	apt-get -y autoremove; \
 	rm -rf ./*nginx*
+RUN apt-get install -y ffmpeg
 
 # forward request and error logs to docker log collector
 RUN ln -sf /dev/stdout /var/log/nginx/access.log
 RUN ln -sf /dev/stderr /var/log/nginx/error.log
 
-EXPOSE 80 443
-VOLUME ["/etc/nginx", "/var/cache/nginx"]
+COPY /root/ /
+COPY /etc/nginx/ /etc/nginx/
 
-CMD ["nginx", "-g", "daemon off;"]
+EXPOSE 8080
+
+ENTRYPOINT [ "/entrypoint.sh" ]
