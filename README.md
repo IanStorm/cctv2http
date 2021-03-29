@@ -1,4 +1,4 @@
-# cam2http
+# CCTV to HTTP
 
 **🐳 Make sure you have installed *Docker*.**
 
@@ -13,7 +13,7 @@ $	docker run \
 		-t \
 		--device=/dev/video0 \
 		-p 8080:8080 \
-		ianstorm/cam2http:latest
+		ianstorm/cctv2http:latest
 ```
 
 
@@ -29,7 +29,7 @@ $	docker run \
 
 Get the latest Docker image from Docker Hub:
 ```
-$	docker pull ianstorm/cam2http:latest
+$	docker pull ianstorm/cctv2http:latest
 ```
 
 
