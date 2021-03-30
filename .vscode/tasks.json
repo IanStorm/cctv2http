@@ -2,10 +2,28 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
+			"label": "build",
+			"type": "shell",
+			"command": "docker build -t cctv2http .",
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
 			"label": "Docker pull",
 			"type": "shell",
 			"command": "docker pull ianstorm/dev-settings-sync",
 			"problemMatcher": []
+		},
+		{
+			"label": "run",
+			"type": "shell",
+			"command": "docker run --rm -i -t -p 8080:80 cctv2http",
+			"dependsOn": [
+				"build"
+			]
 		},
 		{
 			"label": "sync",
