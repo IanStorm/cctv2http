@@ -27,9 +27,14 @@ Make sure to have installed *Visual Studio Code*.
 
 1. Clonse this repository, open the cloned folder in vscode.
 2. Install the _recommended extensions_.
-2. Update `root/entrypoint.sh` to use a dummy RSTP stream, e.g. `rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov`.
-2. Build & start a Docker instance: Run the vscode task `run`.
-2. The (HLS) live stream is available via `http://127.0.0.1:8080/live.m3u8`.
+3. Update `root/entrypoint.sh` to use a dummy RSTP stream: Replace `-f <something> -i <something> \` by:
+```
+	-stream_loop -1 \
+	-rtsp_transport tcp \
+	-i rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov \
+```
+4. Build & start a Docker instance: Run the vscode task `run`.
+5. The (HLS) live stream is available via `http://127.0.0.1:8080/live.m3u8`.
 
 
 ## Appendix
