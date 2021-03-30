@@ -30,7 +30,7 @@ $	docker run \
 Make sure to have installed *Visual Studio Code*.
 
 1. Clonse this repository, open the cloned folder in vscode.
-2. Install the _recommended extensions_.
+2. Install the *recommended extensions*.
 3. Update `root/entrypoint.sh` to use a dummy RSTP stream: Replace `-f <something> -i <something> \` by:
 ```
 	-stream_loop -1 \
@@ -63,4 +63,4 @@ $	docker pull ianstorm/cctv2http:latest
 
 * [GH mpromonet/v4l2rtspserver](https://github.com/mpromonet/v4l2rtspserver), if HLS feature would work
 * [GH Roverr/rtsp-stream](https://github.com/Roverr/rtsp-stream), if Docker image was available for ARM
-* motionEyeOS
+* [GH ccrisan/motioneyeos](https://github.com/ccrisan/motioneyeos)
