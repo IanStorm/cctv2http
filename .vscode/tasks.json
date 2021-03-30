@@ -21,6 +21,7 @@
 			"label": "run",
 			"type": "shell",
 			"command": "docker run --rm -i -t -p 8080:80 cctv2http",
+			"problemMatcher": [],
 			"dependsOn": [
 				"build"
 			]
