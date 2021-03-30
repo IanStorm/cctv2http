@@ -1,7 +1,11 @@
 # CCTV to HTTP
 
+[![GitHub Actions](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2FIanStorm%2Fcctv2http%2Fbadge%3Fref%3Dmain&style=flat&label=build&logo=none)](https://actions-badge.atrox.dev/IanStorm/cctv2http/goto?ref=main)
 [![Docker Pulls](https://img.shields.io/docker/pulls/ianstorm/cctv2http)](https://hub.docker.com/r/ianstorm/cctv2http)
 [![Docker Stars](https://img.shields.io/docker/stars/ianstorm/cctv2http)](https://hub.docker.com/r/ianstorm/cctv2http)
+
+Provides browser-ready access to a live CCTV feed.
+Lighweight design to fit on small hardware.
 
 **🐳 Make sure you have installed *Docker*.**
 
