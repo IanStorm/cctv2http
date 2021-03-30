@@ -9,7 +9,7 @@ RUN mkdir -p /run/nginx/hls/ && \
 RUN apk add ffmpeg~=4.3
 
 COPY ./etc/nginx/ /etc/nginx/
-COPY ./root /
-RUN chmod +x /entrypoint.sh
+COPY ./root/ /root/
+RUN chmod +x /root/entrypoint.sh
 
-ENTRYPOINT [ "/entrypoint.sh" ]
+ENTRYPOINT [ "/root/entrypoint.sh" ]
