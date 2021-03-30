@@ -3,7 +3,7 @@
 nginx
 
 ffmpeg \
-	-f video4linux2 -i /dev/video0 \
+	-i rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov \
 	-fflags nobuffer \
 	-vcodec libx264 -vprofile baseline \
 	-an \
