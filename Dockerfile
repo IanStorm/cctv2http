@@ -10,5 +10,6 @@ RUN apk add ffmpeg~=4.3
 
 COPY ./etc/nginx/ /etc/nginx/
 COPY ./root /
+RUN chmod +x /entrypoint.sh
 
 ENTRYPOINT [ "/entrypoint.sh" ]
