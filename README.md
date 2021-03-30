@@ -1,5 +1,8 @@
 # CCTV to HTTP
 
+[![Docker Pulls](https://img.shields.io/docker/pulls/ianstorm/cctv2http)](https://hub.docker.com/r/ianstorm/cctv2http)
+[![Docker Stars](https://img.shields.io/docker/stars/ianstorm/cctv2http)](https://hub.docker.com/r/ianstorm/cctv2http)
+
 **🐳 Make sure you have installed *Docker*.**
 
 
