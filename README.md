@@ -43,7 +43,7 @@ $	docker pull ianstorm/cctv2http:latest
 ```
 
 
-### Sources
+### Sources 📙
 
 * [Setting up HLS live streaming server using NGINX](https://docs.peer5.com/guides/setting-up-hls-live-streaming-server-using-nginx/)
 * [GitHub: arut/nginx-rtmp-module](https://github.com/arut/nginx-rtmp-module)
@@ -54,3 +54,4 @@ $	docker pull ianstorm/cctv2http:latest
 
 * [GH mpromonet/v4l2rtspserver](https://github.com/mpromonet/v4l2rtspserver), if HLS feature would work
 * [GH Roverr/rtsp-stream](https://github.com/Roverr/rtsp-stream), if Docker image was available for ARM
+* motionEyeOS
