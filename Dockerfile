@@ -35,9 +35,10 @@ RUN apt-get install -y ffmpeg
 RUN ln -sf /dev/stdout /var/log/nginx/access.log
 RUN ln -sf /dev/stderr /var/log/nginx/error.log
 
+RUN mkdir -p /run/nginx/hls/
 COPY /root/ /
 COPY /etc/nginx/ /etc/nginx/
 
-EXPOSE 8080
+EXPOSE 80
 
 ENTRYPOINT [ "/entrypoint.sh" ]
